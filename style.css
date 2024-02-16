@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.result {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.result img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.result .title {
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+    .result {
+        width: calc(50% - 20px);
+    }
+
+    .img {
+        width: 325px;
+        height: 282px;
+        top: 341px;
+        left: 35.03px;
+
+    }
+
+    .container {
+        display: none;
+    }
+
+    .watch {
+        Width: 96px;
+        Height: 33px;
+        Top: 14px;
+        Left: 25px;
+        background-color: rgb(255, 251, 247);
+    }
+
+    .view {
+        Width: 85px;
+        Height: 33px;
+        Top: 14px;
+        Left: 30.5px;
+        background-color: rgb(35, 34, 41);
+    }
+
+    .heading {
+        font-family: Athene;
+        Font-weight: 400;
+        Font-size: 48.18px;
+        height: 180%;
+        align-self: flex-start;
+    }
+
+    .name {
+        font-family: Goldman;
+        font-weight: 400;
+        Font-size: 24px;
+        height: 180%;
+    }
+
+    .para {
+        font-family: Fira Sans;
+        Font-weight: 800;
+        Font-size: 24px;
+        height: 29px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 949px) {
+    .result {
+        width: calc(33.33% - 20px);
+    }
+
+    .container1 {
+        display: none;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 949px) and (max-width: 1200px) {
+    .result {
+        width: calc(33.33% - 20px);
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+}
